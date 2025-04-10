@@ -7,7 +7,9 @@ step_size = 0.1;
 
 % Create an instance of the HardSphere class
 hs = HardSphere('Example Run',particle_number, polydispersity, initial_pfrac, expand_rate, step_size);
+% hold(hold time, data frequency)
 hs.hold(10000, 1000); %Equilibriate
+% compress(packing fraction to compress to, compression frequency, data frequency) 
 hs.compress(0.5,1000,1000); % Compress to a dense packing fraction that still allows for dispersion
 hs.hold(100000, 1000); %Hold again
 hs.compress(0.55,1000,1000); % Compress to a denser state.
