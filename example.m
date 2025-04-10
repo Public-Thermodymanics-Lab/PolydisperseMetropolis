@@ -15,3 +15,6 @@ hs.hold(100000, 1000); %Hold again
 hs.compress(0.55,1000,1000); % Compress to a denser state.
 hs.hold(100000, 1000);
 hs.compress(0.6,1000,1000); % Crystallization should have been reached by now
+
+
+%hs.decompress(target packing fraction, data interval)
